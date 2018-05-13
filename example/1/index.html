@@ -5,6 +5,19 @@
     <title>Title</title>
 </head>
 <body>
-
+<script src="../../src/index.js"></script>
+<div id="app">
+    <div v-bind:class="text">attr测试</div>
+    <input type="text" v-model="text"/>
+    {{text}}
+</div>
+<script>
+    new Vue({
+        el: "#app",
+        data: {
+            text: 'hello word'
+        }
+    })
+</script>
 </body>
 </html>
